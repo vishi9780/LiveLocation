@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_startloc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/getLocationTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="20sp"
+            android:textSize="20dp"
+            android:textColor="@color/black"
+            android:text="Get Current Location" />
+
+        <TextView
+            android:id="@+id/currentLocationTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:text="" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_opneFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="open fragment"
+        android:layout_below="@+id/ll_startloc"/>
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true"
+        />
+    <TextView
+        android:id="@+id/stopTxt"
+        android:layout_width="wrap_content"
+        android:text="Stop Location Update"
+        android:layout_height="wrap_content"
+        android:padding="20sp"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/black"/>
+
+
+</RelativeLayout>
