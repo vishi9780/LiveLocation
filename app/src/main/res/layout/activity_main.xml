@@ -36,7 +36,14 @@
         android:layout_height="50dp"
         android:text="open fragment"
         android:layout_below="@+id/ll_startloc"/>
+    <Button
+        android:id="@+id/btn_stopneFragment"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Stop"
+        android:layout_below="@+id/btn_opneFragment"/>
     <FrameLayout
+        android:visibility="gone"
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="200dp"
